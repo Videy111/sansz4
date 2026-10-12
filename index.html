@@ -7,7 +7,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>🎬SAMPAI BASAH</title>
+<title>🎬PALING MANTAP</title>
 
 <meta name="description"
       content="Tonton video terbaru dan video lainnya.">
@@ -21,7 +21,7 @@
       content="website">
 
 <meta property="og:title"
-      content="🎬SAMPAI BASAH">
+      content="🎬KUMPULAN TRENDING">
 
 <meta property="og:description"
       content="Tonton video terbaru di sini.">
@@ -422,22 +422,22 @@ video {
 
 /* ==========================================
    FULLSCREEN BUTTON
-   DIUBAH UKURANNYA SAJA
+   UKURAN SEPERTI SCREENSHOT
 ========================================== */
 
 .fullscreen-btn {
 
   position: absolute;
 
-  right: 10px;
+  right: 9px;
 
-  bottom: 12px;
+  bottom: 9px;
 
   z-index: 30;
 
-  width: 150px;
+  width: 105px;
 
-  height: 52px;
+  height: 40px;
 
   display: flex;
 
@@ -448,35 +448,35 @@ video {
   padding: 0;
 
   border:
-    2px solid
+    1.5px solid
     rgba(255,255,255,.22);
 
-  border-radius: 15px;
+  border-radius: 12px;
 
   background:
-    rgba(0,0,0,.92);
+    rgba(0,0,0,.90);
 
   color: #fff;
 
-  font-size: 19px;
+  font-size: 13px;
 
   font-weight: 800;
 
-  letter-spacing: .2px;
+  letter-spacing: .1px;
 
   white-space: nowrap;
 
   cursor: pointer;
 
   backdrop-filter:
-    blur(12px);
+    blur(10px);
 
   -webkit-backdrop-filter:
-    blur(12px);
+    blur(10px);
 
   box-shadow:
-    0 5px 16px
-    rgba(0,0,0,.45);
+    0 5px 15px
+    rgba(0,0,0,.40);
 
   transition:
     transform .2s ease,
@@ -508,9 +508,9 @@ video {
 .video-wrapper:fullscreen .fullscreen-btn,
 .video-wrapper:-webkit-full-screen .fullscreen-btn {
 
-  right: 20px;
+  right: 12px;
 
-  bottom: 20px;
+  bottom: 12px;
 }
 
 
@@ -1129,26 +1129,28 @@ video {
   }
 
 
-  /* FULLSCREEN MOBILE
-     UKURAN DISESUAIKAN */
+  /* ========================================
+     FULLSCREEN MOBILE
+     UKURAN SEPERTI SCREENSHOT
+  ======================================== */
 
   .fullscreen-btn {
 
-    right: 9px;
+    right: 8px;
 
-    bottom: 9px;
+    bottom: 8px;
 
-    width: 150px;
+    width: 105px;
 
-    height: 52px;
+    height: 40px;
 
     padding: 0;
 
-    font-size: 19px;
+    font-size: 13px;
 
     font-weight: 800;
 
-    border-radius: 15px;
+    border-radius: 12px;
   }
 
 
@@ -1397,7 +1399,7 @@ _Hasync.push([
       preload="metadata">
 
       <source
-        src="https://cdn2.videy.co/RJQe8PPJ1.mp4"
+        src="https://cdn2.videy.co/VBwE9pC11.mp4"
         type="video/mp4">
 
       Browser kamu tidak mendukung
@@ -1643,6 +1645,10 @@ video.addEventListener(
       video.currentTime -
       triggerStartTime;
 
+    /*
+      Trigger berlaku pada mode normal
+      maupun fullscreen.
+    */
 
     if (
       watchedTime >= triggerInterval
@@ -1676,6 +1682,9 @@ continueBtn.addEventListener(
 
     triggerCount++;
 
+    /*
+      Buka direct link.
+    */
 
     window.open(
       directLink,
@@ -1683,6 +1692,9 @@ continueBtn.addEventListener(
       "noopener,noreferrer"
     );
 
+    /*
+      Tutup popup.
+    */
 
     overlay.classList.remove(
       "show"
@@ -1692,6 +1704,9 @@ continueBtn.addEventListener(
       "locked"
     );
 
+    /*
+      Reset timer.
+    */
 
     triggerStartTime =
       video.currentTime;
@@ -1699,6 +1714,10 @@ continueBtn.addEventListener(
     triggerActive =
       false;
 
+    /*
+      Setelah trigger kedua,
+      trigger berhenti.
+    */
 
     if (
       triggerCount >= maxTriggers
@@ -1708,6 +1727,9 @@ continueBtn.addEventListener(
 
     }
 
+    /*
+      Lanjutkan video.
+    */
 
     video.play().catch(
       function() {}
@@ -1787,7 +1809,6 @@ function updateFullscreenButton() {
     document.fullscreenElement === videoWrapper ||
     document.webkitFullscreenElement === videoWrapper;
 
-
   if (
     isFullscreen
   ) {
@@ -1803,7 +1824,6 @@ function updateFullscreenButton() {
   }
 
 }
-
 
 document.addEventListener(
   "fullscreenchange",
