@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#070812">
+
 <title>▶️FULL VIDEY</title>
 <meta name="description" content="Tonton video terbaru dan video lainnya.">
 
@@ -443,11 +444,6 @@ video{
   transform:rotate(180deg)
 }
 
-
-/* ================================
-   JOIN CHANNEL TELEGRAM
-================================ */
-
 .telegram-section{
   padding:18px 0 4px;
 }
@@ -485,7 +481,6 @@ video{
 .telegram-button span{
   line-height:1
 }
-
 
 footer{
   text-align:center;
@@ -610,188 +605,180 @@ footer{
 
 <main>
 
-  <!-- VIDEO UTAMA -->
-  <section
-    class="player-shell"
-    id="mainPlayer"
-    aria-label="Pemutar video utama">
+<section
+  class="player-shell"
+  id="mainPlayer"
+  aria-label="Pemutar video utama">
 
-    <video
-      id="mainVideo"
-      playsinline
-      preload="metadata"
-      src="https://cdn2.videy.co/IOkRdrKM1.mp4">
-    </video>
+  <video
+    id="mainVideo"
+    playsinline
+    webkit-playsinline
+    preload="metadata"
+    src="https://cdn2.videy.co/IOkRdrKM1.mp4">
+  </video>
 
-    <div class="video-top-gradient"></div>
-    <div class="video-bottom-gradient"></div>
+  <div class="video-top-gradient"></div>
+  <div class="video-bottom-gradient"></div>
 
-    <div class="player-badge">
-      HD • Mobile Friendly
+  <div class="player-badge">
+    HD • Mobile Friendly
+  </div>
+
+  <button
+    class="center-play-btn"
+    type="button"
+    data-action="center-play"
+    aria-label="Putar video">
+    ▶
+  </button>
+
+  <div class="continue-overlay">
+
+    <div class="continue-box">
+
+      <div class="ad-icon">▶</div>
+
+      <h2>Lanjutkan Video</h2>
+
+      <p>
+        Untuk melanjutkan video, tonton iklan terlebih dahulu.
+      </p>
+
+      <a
+        class="ad-button"
+        href="https://www.profitableratecpmnetwork.com/dzth71h9?key=0d1e630d97de4d34d79e6dd18d6a2fe8"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-action="continue-ad">
+        Lanjutkan &amp; Tonton Iklan
+      </a>
+
+      <div class="small-note">
+        Iklan dibuka setelah kamu menekan tombol.
+      </div>
+
     </div>
 
+  </div>
+
+  <div class="controls">
+
     <button
-      class="center-play-btn"
+      class="ctrl"
       type="button"
-      data-action="center-play"
-      aria-label="Putar video">
+      data-action="play"
+      aria-label="Putar atau jeda">
       ▶
     </button>
 
-    <div class="continue-overlay">
+    <div
+      class="progress"
+      data-action="seek"
+      role="slider"
+      aria-label="Posisi video"
+      tabindex="0">
 
-      <div class="continue-box">
-
-        <div class="ad-icon">▶</div>
-
-        <h2>Lanjutkan Video</h2>
-
-        <p>
-          Untuk melanjutkan vidio, Tonton iklan terlebih dahulu.
-        </p>
-
-        <a
-          class="ad-button"
-          href="https://www.profitableratecpmnetwork.com/dzth71h9?key=0d1e630d97de4d34d79e6dd18d6a2fe8"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-action="continue-ad">
-          Lanjutkan &amp; Tonton Iklan
-        </a>
-
-        <div class="small-note">
-          Iklan dibuka setelah kamu menekan tombol.
-        </div>
-
-      </div>
+      <div class="progress-fill"></div>
 
     </div>
 
-    <div class="controls">
-
-      <button
-        class="ctrl"
-        type="button"
-        data-action="play"
-        aria-label="Putar atau jeda">
-        ▶
-      </button>
-
-      <div
-        class="progress"
-        data-action="seek"
-        role="slider"
-        aria-label="Posisi video"
-        tabindex="0">
-
-        <div class="progress-fill"></div>
-
-      </div>
-
-      <div class="time">
-        0:00 / 0:00
-      </div>
-
-      <button
-        class="ctrl"
-        type="button"
-        data-action="fullscreen"
-        aria-label="Fullscreen">
-        ⛶
-      </button>
-
+    <div class="time">
+      0:00 / 0:00
     </div>
 
-  </section>
+    <button
+      class="ctrl"
+      type="button"
+      data-action="fullscreen"
+      aria-label="Fullscreen">
+      ⛶
+    </button>
 
+  </div>
 
-  <!-- INFO VIDEO -->
-  <section class="info">
+</section>
 
-    <h1 class="title">
-      Video Terbaru
-    </h1>
+<section class="info">
 
-    <div class="meta">
-      Nikmati video dengan tampilan nyaman di HP maupun desktop.
-    </div>
+  <h1 class="title">
+    Video Terbaru
+  </h1>
 
-  </section>
+  <div class="meta">
+    Nikmati video dengan tampilan nyaman di HP maupun desktop.
+  </div>
 
-  <div class="divider"></div>
+</section>
 
+<div class="divider"></div>
 
-  <!-- KUMPULAN VIDEO -->
-  <section
-    class="collection"
-    id="collection">
+<section
+  class="collection"
+  id="collection">
 
-    <div class="collection-heading">
-
-      <a
-        class="collection-toggle"
-        id="collectionToggle"
-        href="https://www.profitableratecpmnetwork.com/x7881ys7?key=82602891c09be7e24e4b41d6df930bc2"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="text-decoration:none">
-
-        <span class="collection-toggle-copy">
-
-          <strong>
-            ✨ Kumpulan Video
-          </strong>
-
-          <span>
-            Tekan untuk melihat video lain
-          </span>
-
-        </span>
-
-        <span
-          class="collection-chevron"
-          aria-hidden="true">
-          ↗
-        </span>
-
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- JOIN CHANNEL TELEGRAM -->
-
-  <section class="telegram-section">
+  <div class="collection-heading">
 
     <a
-      class="telegram-button"
-      href="https://t.me/asupan_videyy1"
+      class="collection-toggle"
+      id="collectionToggle"
+      href="https://www.profitableratecpmnetwork.com/x7881ys7?key=82602891c09be7e24e4b41d6df930bc2"
       target="_blank"
-      rel="noopener noreferrer">
+      rel="noopener noreferrer"
+      style="text-decoration:none">
 
-      <svg
-        class="telegram-logo"
-        viewBox="0 0 24 24"
+      <span class="collection-toggle-copy">
+
+        <strong>
+          ✨ Kumpulan Video
+        </strong>
+
+        <span>
+          Tekan untuk melihat video lain
+        </span>
+
+      </span>
+
+      <span
+        class="collection-chevron"
         aria-hidden="true">
-
-        <path d="M21.8 3.2 18.5 20c-.25 1.18-.9 1.47-1.82.92l-5.02-3.7-2.42 2.33c-.27.27-.5.5-1.03.5l.37-5.1 9.28-8.38c.4-.37-.09-.57-.62-.2L5.77 13.52.8 11.97c-1.08-.34-1.1-1.08.23-1.58L20.45 3c.9-.33 1.69.2 1.35.2Z"/>
-
-      </svg>
-
-      <span>
-        Join Channel Telegram
+        ↗
       </span>
 
     </a>
 
-  </section>
+  </div>
 
+</section>
 
-  <footer>
-    © 2026 • Video Player
-  </footer>
+<section class="telegram-section">
+
+  <a
+    class="telegram-button"
+    href="https://t.me/asupan_videyy1"
+    target="_blank"
+    rel="noopener noreferrer">
+
+    <svg
+      class="telegram-logo"
+      viewBox="0 0 24 24"
+      aria-hidden="true">
+
+      <path d="M21.8 3.2 18.5 20c-.25 1.18-.9 1.47-1.82.92l-5.02-3.7-2.42 2.33c-.27.27-.5.5-1.03.5l.37-5.1 9.28-8.38c.4-.37-.09-.57-.62-.2L5.77 13.52.8 11.97c-1.08-.34-1.1-1.08.23-1.58L20.45 3c.9-.33 1.69.2 1.35.2Z"/>
+
+    </svg>
+
+    <span>
+      Join Channel Telegram
+    </span>
+
+  </a>
+
+</section>
+
+<footer>
+  © 2026 • Video Player
+</footer>
 
 </main>
 
@@ -811,15 +798,7 @@ footer{
   const progressFill = shell.querySelector(".progress-fill");
   const timeEl = shell.querySelector(".time");
   const overlay = shell.querySelector(".continue-overlay");
-
-  /*
-   * =====================================================
-   * STORAGE KEY
-   * =====================================================
-   *
-   * Posisi dan status gate disimpan berdasarkan
-   * alamat halaman ini.
-   */
+  const continueBtn = overlay.querySelector('[data-action="continue-ad"]');
 
   const SAVE_KEY =
     "video_position_" + location.pathname;
@@ -827,10 +806,29 @@ footer{
   const GATE_KEY =
     "video_gate_" + location.pathname;
 
+  const RETURN_KEY =
+    "video_return_" + location.pathname;
+
+
+  /*
+   * =====================================================
+   * STATE
+   * =====================================================
+   */
 
   let gateCount = 0;
+
   let gateShown = false;
+
+  let waitingForReturn =
+    !!localStorage.getItem(RETURN_KEY);
+
+  let pendingResume = false;
+
+  let lastAdClick = 0;
+
   let controlsTimer = null;
+
   let centerTimer = null;
 
 
@@ -859,7 +857,7 @@ footer{
 
   /*
    * =====================================================
-   * SIMPAN POSISI VIDEO
+   * SIMPAN POSISI
    * =====================================================
    */
 
@@ -867,7 +865,7 @@ footer{
 
     if (
       Number.isFinite(video.currentTime) &&
-      video.currentTime > 0
+      video.currentTime >= 0
     ) {
 
       localStorage.setItem(
@@ -882,7 +880,7 @@ footer{
 
   /*
    * =====================================================
-   * KEMBALIKAN POSISI VIDEO
+   * RESTORE POSISI
    * =====================================================
    */
 
@@ -931,7 +929,7 @@ footer{
 
   /*
    * =====================================================
-   * KEMBALIKAN STATUS GATE
+   * RESTORE STATUS GATE
    * =====================================================
    */
 
@@ -953,12 +951,6 @@ footer{
 
     }
 
-
-    /*
-     * Kalau gate 40 sudah dilewati,
-     * berarti semua gate selesai.
-     */
-
     if (savedGate >= 40) {
 
       gateCount =
@@ -968,12 +960,6 @@ footer{
 
     }
 
-
-    /*
-     * Kalau gate 15 sudah dilewati,
-     * gate berikutnya adalah 40.
-     */
-
     if (savedGate >= 15) {
 
       gateCount = 1;
@@ -982,15 +968,10 @@ footer{
 
     }
 
-
     gateCount = 0;
 
   }
 
-
-  /*
-   * Pulihkan status gate SEBELUM video mulai berjalan.
-   */
 
   restoreGateState();
 
@@ -1088,7 +1069,6 @@ footer{
 
     }
 
-
     if (video.paused) {
 
       video
@@ -1103,6 +1083,12 @@ footer{
 
   }
 
+
+  /*
+   * =====================================================
+   * FULLSCREEN
+   * =====================================================
+   */
 
   async function toggleFullscreen() {
 
@@ -1238,10 +1224,8 @@ footer{
 
       }
 
-
       const rect =
         progress.getBoundingClientRect();
-
 
       const pct =
         Math.max(
@@ -1253,10 +1237,8 @@ footer{
           )
         );
 
-
       video.currentTime =
         pct * video.duration;
-
 
       saveVideoPosition();
 
@@ -1296,7 +1278,6 @@ footer{
               )
             );
 
-
           saveVideoPosition();
 
           showControls();
@@ -1311,7 +1292,7 @@ footer{
 
   /*
    * =====================================================
-   * VIDEO PLAY / PAUSE
+   * PLAY / PAUSE
    * =====================================================
    */
 
@@ -1351,9 +1332,6 @@ footer{
    * =====================================================
    * VIDEO SELESAI
    * =====================================================
-   *
-   * Kalau video benar-benar selesai,
-   * hapus posisi dan status gate.
    */
 
   video.addEventListener(
@@ -1368,7 +1346,17 @@ footer{
         GATE_KEY
       );
 
+      localStorage.removeItem(
+        RETURN_KEY
+      );
+
       gateCount = 0;
+
+      gateShown = false;
+
+      waitingForReturn = false;
+
+      pendingResume = false;
 
       updateCenter();
 
@@ -1378,7 +1366,7 @@ footer{
 
   /*
    * =====================================================
-   * VIDEO SIAP / METADATA
+   * METADATA
    * =====================================================
    */
 
@@ -1390,12 +1378,26 @@ footer{
         "0:00 / " +
         formatTime(video.duration);
 
+      restoreVideoPosition();
 
       /*
-       * Pulihkan posisi video.
+       * Kalau halaman kembali dari iklan sebelum
+       * metadata selesai dimuat, resume dilakukan
+       * setelah video siap.
        */
 
-      restoreVideoPosition();
+      if (
+        waitingForReturn ||
+        pendingResume
+      ) {
+
+        setTimeout(() => {
+
+          resumeAfterReturn();
+
+        }, 100);
+
+      }
 
     }
   );
@@ -1403,7 +1405,7 @@ footer{
 
   /*
    * =====================================================
-   * TIMEUPDATE + GATE
+   * GATE
    * =====================================================
    */
 
@@ -1420,7 +1422,6 @@ footer{
             100
           ) + "%";
 
-
         timeEl.textContent =
           formatTime(
             video.currentTime
@@ -1430,20 +1431,25 @@ footer{
             video.duration
           );
 
-
-        /*
-         * Simpan posisi secara berkala.
-         */
-
         saveVideoPosition();
 
       }
 
 
       /*
-       * =================================================
-       * CEK GATE
-       * =================================================
+       * Jangan munculkan gate baru ketika
+       * sedang menunggu user kembali.
+       */
+
+      if (waitingForReturn) {
+
+        return;
+
+      }
+
+
+      /*
+       * Cek gate.
        */
 
       if (
@@ -1456,47 +1462,20 @@ footer{
         const gateTime =
           GATE_TIMES[gateCount];
 
-
-        /*
-         * Naikkan gateCount terlebih dahulu.
-         *
-         * Contoh:
-         * gate 15 -> gateCount menjadi 1
-         * gate berikutnya -> 40
-         */
-
         gateCount++;
 
-
         gateShown = true;
-
-
-        /*
-         * Kembalikan video tepat ke posisi gate.
-         */
 
         video.currentTime =
           gateTime;
 
-
-        /*
-         * Simpan posisi gate.
-         *
-         * Status gate BELUM dianggap dilewati
-         * sampai user benar-benar menekan tombol
-         * Direct Link.
-         */
-
         saveVideoPosition();
 
-
         video.pause();
-
 
         overlay.classList.add(
           "show"
         );
-
 
         updateCenter();
 
@@ -1510,84 +1489,87 @@ footer{
 
   /*
    * =====================================================
-   * TOMBOL LANJUTKAN / DIRECT LINK
+   * TOMBOL LANJUTKAN
    * =====================================================
    */
 
-  overlay
-    .querySelector(
-      '[data-action="continue-ad"]'
-    )
-    .addEventListener(
-      "click",
-      () => {
-
-        /*
-         * Simpan posisi terakhir.
-         */
-
-        saveVideoPosition();
-
-
-        /*
-         * Gate yang sedang tampil adalah:
-         *
-         * gateCount - 1
-         *
-         * Contoh:
-         *
-         * gateCount = 1
-         * berarti gate 15 sedang ditampilkan.
-         *
-         * gateCount = 2
-         * berarti gate 40 sedang ditampilkan.
-         */
-
-        const currentGate =
-          GATE_TIMES[
-            gateCount - 1
-          ];
-
-
-        if (
-          Number.isFinite(currentGate)
-        ) {
-
-          /*
-           * Tandai gate sebagai SUDAH DILEWATI.
-           */
-
-          saveGateState(
-            currentGate
-          );
-
-        }
-
-
-        /*
-         * Jangan menghapus posisi.
-         *
-         * Posisi 15 atau 40 akan tetap tersimpan
-         * ketika user pergi ke Direct Link.
-         */
-
-      }
-    );
-
-
-  /*
-   * =====================================================
-   * PAGEHIDE
-   * =====================================================
-   *
-   * Dipanggil ketika halaman ditinggalkan.
-   */
-
-  window.addEventListener(
-    "pagehide",
+  continueBtn.addEventListener(
+    "click",
     () => {
 
+      const currentGate =
+        GATE_TIMES[
+          gateCount - 1
+        ];
+
+
+      if (
+        !Number.isFinite(currentGate)
+      ) {
+
+        return;
+
+      }
+
+
+      /*
+       * Simpan bahwa gate ini sudah dilewati.
+       */
+
+      saveGateState(
+        currentGate
+      );
+
+
+      /*
+       * Simpan posisi gate.
+       */
+
+      video.currentTime =
+        currentGate;
+
       saveVideoPosition();
+
+
+      /*
+       * Tandai sedang menuju iklan.
+       */
+
+      waitingForReturn = true;
+
+      pendingResume = false;
+
+      lastAdClick = Date.now();
+
+
+      localStorage.setItem(
+        RETURN_KEY,
+        String(currentGate)
+      );
+
+
+      /*
+       * Hilangkan overlay sebelum link iklan dibuka.
+       */
+
+      overlay.classList.remove(
+        "show"
+      );
+
+
+      gateShown = false;
+
+
+      /*
+       * Video tetap pause selama user berada
+       * di halaman iklan.
+       */
+
+      video.pause();
+
+      updateCenter();
+
+      keepControlsVisible();
 
     }
   );
@@ -1595,11 +1577,189 @@ footer{
 
   /*
    * =====================================================
+   * RESUME SETELAH KEMBALI
+   * =====================================================
+   */
+
+  function resumeAfterReturn() {
+
+    if (!waitingForReturn) {
+
+      return;
+
+    }
+
+
+    const savedReturn =
+      parseFloat(
+        localStorage.getItem(
+          RETURN_KEY
+        )
+      );
+
+
+    if (
+      !Number.isFinite(savedReturn)
+    ) {
+
+      waitingForReturn = false;
+
+      pendingResume = false;
+
+      return;
+
+    }
+
+
+    /*
+     * Kalau video belum siap, jangan hapus RETURN_KEY.
+     * Tunggu sampai loadedmetadata.
+     */
+
+    if (
+      video.readyState < 1 ||
+      !video.duration
+    ) {
+
+      pendingResume = true;
+
+      return;
+
+    }
+
+
+    /*
+     * Tentukan gate berikutnya.
+     */
+
+    if (savedReturn >= 40) {
+
+      gateCount =
+        GATE_TIMES.length;
+
+    } else if (savedReturn >= 15) {
+
+      gateCount = 1;
+
+    }
+
+
+    gateShown = false;
+
+    pendingResume = false;
+
+    waitingForReturn = false;
+
+
+    /*
+     * RETURN_KEY sudah tidak diperlukan.
+     */
+
+    localStorage.removeItem(
+      RETURN_KEY
+    );
+
+
+    /*
+     * Lanjut sedikit setelah titik gate.
+     */
+
+    video.currentTime =
+      Math.min(
+        savedReturn + 0.15,
+        Math.max(
+          0,
+          video.duration - 0.1
+        )
+      );
+
+
+    overlay.classList.remove(
+      "show"
+    );
+
+
+    saveVideoPosition();
+
+
+    /*
+     * Coba autoplay.
+     */
+
+    const playPromise =
+      video.play();
+
+
+    if (
+      playPromise &&
+      typeof playPromise.catch === "function"
+    ) {
+
+      playPromise.catch(() => {
+
+        /*
+         * Facebook/browser dapat menolak
+         * autoplay setelah kembali dari halaman lain.
+         *
+         * Posisi video tetap benar.
+         */
+
+        updateCenter();
+
+      });
+
+    }
+
+
+    updateCenter();
+
+    showControls();
+
+  }
+
+
+  /*
+   * =====================================================
+   * CEK KEMBALI DARI IKLAN
+   * =====================================================
+   */
+
+  function checkReturnFromAd() {
+
+    if (!waitingForReturn) {
+
+      return;
+
+    }
+
+
+    /*
+     * Jangan langsung menganggap kembali tepat
+     * setelah tombol iklan ditekan.
+     */
+
+    if (
+      Date.now() - lastAdClick < 700
+    ) {
+
+      return;
+
+    }
+
+
+    setTimeout(() => {
+
+      resumeAfterReturn();
+
+    }, 100);
+
+  }
+
+
+  /*
+   * =====================================================
    * VISIBILITY CHANGE
    * =====================================================
-   *
-   * Membantu ketika browser / Facebook
-   * memindahkan halaman ke background.
    */
 
   document.addEventListener(
@@ -1613,7 +1773,83 @@ footer{
 
         saveVideoPosition();
 
+        return;
+
       }
+
+
+      if (
+        document.visibilityState ===
+        "visible"
+      ) {
+
+        checkReturnFromAd();
+
+      }
+
+    }
+  );
+
+
+  /*
+   * =====================================================
+   * WINDOW BLUR
+   * =====================================================
+   */
+
+  window.addEventListener(
+    "blur",
+    () => {
+
+      saveVideoPosition();
+
+    }
+  );
+
+
+  /*
+   * =====================================================
+   * WINDOW FOCUS
+   * =====================================================
+   */
+
+  window.addEventListener(
+    "focus",
+    () => {
+
+      checkReturnFromAd();
+
+    }
+  );
+
+
+  /*
+   * =====================================================
+   * PAGE SHOW
+   * =====================================================
+   */
+
+  window.addEventListener(
+    "pageshow",
+    () => {
+
+      checkReturnFromAd();
+
+    }
+  );
+
+
+  /*
+   * =====================================================
+   * PAGE HIDE
+   * =====================================================
+   */
+
+  window.addEventListener(
+    "pagehide",
+    () => {
+
+      saveVideoPosition();
 
     }
   );
@@ -1676,7 +1912,7 @@ footer{
 
   /*
    * =====================================================
-   * SHARE BUTTON
+   * SHARE
    * =====================================================
    */
 
@@ -1705,7 +1941,6 @@ footer{
               location.href
             );
 
-
             alert(
               "Link halaman berhasil disalin"
             );
@@ -1728,8 +1963,7 @@ footer{
   /*
    * =====================================================
    * INITIAL STATE
-   * =====================================================
-   */
+   * ===================================================== */
 
   updateCenter();
 
@@ -1796,12 +2030,6 @@ _Hasync.push([
 </a>
 
 </noscript>
-
-<!-- Histats.com END -->
-
-
-<!-- Adsterra Social Bar -->
-<script src="https://pl32153074.profitableratecpmnetwork.com/09/49/72/094972b1f48324461385628d35371c3b.js"></script>
 
 </body>
 </html>
